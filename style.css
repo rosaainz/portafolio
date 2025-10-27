@@ -19,6 +19,7 @@ body {
 
   .navbar {
     background-color: #fff !important;
+    padding: 4px;
   }
 
   .nav-link {
@@ -31,10 +32,15 @@ body {
   .nav-link.active {
     color: #8A4FFF !important;
   }
+
+  .navbar-light .navbar-toggler-icon {
+    filter: invert(0.5);
+    border-color: none;
+  }
   
   .hero {
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 10px;
     background: linear-gradient(135deg, #F9FAFB, #F0EEFF);
   }
   
@@ -62,4 +68,18 @@ body {
     border-radius: 50%;  
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
+
+  .social-link {
+    font-size: 1.4rem;
+    color: #1E1E1E !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+  } 
+
+  .social-link:hover {
+    color: #8A4FFF;
+    transform: scale(1.1);
+  }
   
+  .navbar-light .navbar-toggler-icon {
+    filter: invert(0.5);
+  }
