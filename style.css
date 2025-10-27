@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #8A4FFF;
+    --secondary-color: #5C6BF5;
+    --accent-color: #8A4FFF;
+    --text-color: #2D2D2D;
+    --light-bg: #F9F6F8;
+    --white: #FFFFFF;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F9FAFB;
@@ -10,7 +25,7 @@ body {
   }
   
   .nombre{
-    color: #8A4FFF;
+    color: var(--primary-color);
   }
   
   .nav-item{
@@ -30,7 +45,7 @@ body {
 
   .nav-link:hover,
   .nav-link.active {
-    color: #8A4FFF !important;
+    color: var(--primary-color) !important;
   }
 
   .navbar-light .navbar-toggler-icon {
@@ -43,21 +58,39 @@ body {
     padding-top: 10px;
     background: linear-gradient(135deg, #F9FAFB, #F0EEFF);
   }
+
+  .hero-section {
+    padding: 120px 0 80px;
+    background: radial-gradient(circle at top left, var(--accent-color), #F0EEFF);
+  }
   
   .profile-img {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.05);
   }
   
   .btn-primary {
-    background-color: #8A4FFF;
+    background-color: var(--primary-color);
     border: none;
   }
   
   .btn-primary:hover {
-    background-color: #5C6BF5;
+    background-color: var(--secondary-color);
     
   }
 
@@ -76,10 +109,43 @@ body {
   } 
 
   .social-link:hover {
-    color: #8A4FFF;
+    color: var(--primary-color);
     transform: scale(1.1);
   }
+
   
   .navbar-light .navbar-toggler-icon {
     filter: invert(0.5);
   }
+
+  .social-icon {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .social-links a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:  #E8D5E7;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-5px);
+  }
+  
+
