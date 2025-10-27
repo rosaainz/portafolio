@@ -229,7 +229,7 @@ body {
     justify-content: center;
   }
   .projects-section {
-    background-color: var(--light-bg);
+    background: linear-gradient(135deg, #F9FAFB, #F0EEFF);
   }
   
   .project-card {
@@ -329,3 +329,33 @@ body {
     transform: translateY(-8px) rotate(5deg);
     box-shadow: 0 10px 25px rgba(139, 71, 137, 0.3);
   }
+
+  .contact-section {
+    background: linear-gradient(135deg, #F9FAFB, #F0EEFF);
+  }
+
+  .contact-form-wrapper {
+    background-color: var(--white);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
+  }
+  
+  .form-control {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(139, 71, 137, 0.15);
+  }
+  
