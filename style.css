@@ -147,5 +147,65 @@ body {
     color: var(--white);
     transform: translateY(-5px);
   }
+
+
+  .experience-section {
+    background-color: var(--white);
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: var(--secondary-color);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 50px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+    margin-left: 0;
+    padding-right: 50px;
+  }
+  
+  .timeline-content {
+    width: calc(50% - 30px);
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  .timeline-content span{
+    color: var(--accent-color);
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(139, 71, 137, 0.2);
+  }
+  
+  .timeline-icons {
+    display: flex;
+    gap: 10px;
+  }
   
 
